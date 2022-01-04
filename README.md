@@ -20,7 +20,6 @@ export CONSUMER_KEY=<your-consumer-key>
 export CONSUMER_SECRET=<your-consumer-secret>
 export ACCESS_TOKEN=<your-access-token>
 export ACCESS_TOKEN_SECRET=<your-access-token-secret>
-<br>
 
 Variaveis com informação de acesso ao mongodb:
 export MONGO_SERVER='mongodb://mongo:27017'
