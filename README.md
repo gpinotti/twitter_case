@@ -17,10 +17,10 @@ Requisitos bibliotecas Python [requirements.txt](src/requirements.txt)
 
 
 2. Script que lista os 5 usuarios com maior numero de seguidoresna base:
-https://github.com/gpinotti/twitter_case/blob/main/src/rank_users.py
+[rank_users.py](src/rank_users.py)
 
 3. Total de postagem alocadas por hora do dia:
-https://github.com/gpinotti/twitter_case/blob/main/src/count_tweets_by_hour.py
+[count_tweets_by_hour.py](src/count_tweets_by_hour.py)
 
 4. O total de postagens para cada uma das hashtags por idioma:
 
