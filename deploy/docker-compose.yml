@@ -9,8 +9,8 @@ services:
     ports:
       - "27017:27017"
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: mypass
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
     networks:
       - twnet
 
@@ -20,8 +20,8 @@ services:
     restart: unless-stopped
     environment:
       MONGO_SERVER: mongodb://mongo:27017
-      MONGO_USER: root
-      MONGO_PWD: mypass
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PWD: ${MONGO_PWD}
       CONSUMER_KEY: ${CONSUMER_KEY}
       CONSUMER_SECRET: ${CONSUMER_SECRET}
       ACCESS_TOKEN: ${ACCESS_TOKEN}
