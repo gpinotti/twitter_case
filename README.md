@@ -1,5 +1,5 @@
 # twitter_case
-Documentação do Projeto
+##### Documentação do Projeto
 
 Este projeto coleta dados do Twitter que contenham algumas hashtags pré-definidas e armazena em banco de dados
 Segue a lista de hashtags coletadas:
@@ -11,6 +11,21 @@ Docker Compose 1.27.4+
 Python 3.6.12+
 PyPi (pip) 21.0.1+
 Requisitos bibliotecas Python [requirements.txt](src/requirements.txt)
+
+##### Variaveis de necessárias para execução:
+
+
+Variaveis de autenticação com Twitter necessário exportar:
+export CONSUMER_KEY=<your-consumer-key>
+export CONSUMER_SECRET=<your-consumer-secret>
+export ACCESS_TOKEN=<your-access-token>
+export ACCESS_TOKEN_SECRET=<your-access-token-secret>
+<br>
+
+Variaveis com informação de acesso ao mongodb:
+export MONGO_SERVER='mongodb://mongo:27017'
+export MONGO_USER=root
+export MONGO_PWD=mypass
 
 1. Script  de coleta do Twitter e escrita no db:
 [collect_tweets.py](src/collect_tweets.py)
