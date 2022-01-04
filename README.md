@@ -19,6 +19,28 @@ export ACCESS_TOKEN_SECRET=&lt;your-access-token-secret&gt;</p>
 export MONGO_SERVER=‘mongodb://mongo:27017’<br>
 export MONGO_USER=root<br>
 export MONGO_PWD=mypass</p>
+
+**Passo a passo:**
+- Fazer o clone da imagem do git:
+git clone https://github.com/gpinotti/twitter_case.git
+
+- Criar o arquivo .env dentro do diretório twitter_case/deploy contendo as informações:
+####Criação do user utilizado no DB
+MONGO_INITDB_ROOT_USERNAME=root
+MONGO_INITDB_ROOT_PASSWORD=mypass
+####Usuário de acesso ao DB
+MONGO_SERVER=mongodb://mongo:27017
+MONGO_USER=root
+MONGO_PWD=mypass
+####Token autenticação Twitter
+CONSUMER_KEY=<your key>
+CONSUMER_SECRET=<your key>
+ACCESS_TOKEN=<your key>
+ACCESS_TOKEN_SECRET=<your key>
+
+- Inicializar os containers através do docker compose:
+cd twitter_case/deploy
+docker-compose -f docker-compose.yml up -d
 <ol>
 <li class="has-line-data" data-line-start="28" data-line-end="30">Script  de coleta do Twitter e escrita no db:<br>
 <a href="src/collect_tweets.py">collect_tweets.py</a></li>
