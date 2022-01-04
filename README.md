@@ -6,17 +6,14 @@ Segue a lista de hashtags coletadas:
 #devops, #sre, #microservices, #observability, #oauth, #metrics, #logmonitoring, #opentracing
 
 Pré-requisitos:
-
-Requisitos:
 Docker 20.10.2+
 Docker Compose 1.27.4+
 Python 3.6.12+
 PyPi (pip) 21.0.1+
-
-- Demais requisitos no arquivo [requirements.txt](src/requirements.txt)
+Requisitos bibliotecas Python [requirements.txt](src/requirements.txt)
 
 1. Script  de coleta do Twitter e escrita no db:
-https://github.com/gpinotti/twitter_case/blob/main/src/collect_tweets.py
+[collect_tweets.py](src/collect_tweets.py)
 
 
 2. Script que lista os 5 usuarios com maior numero de seguidoresna base:
