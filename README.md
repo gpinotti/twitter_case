@@ -13,7 +13,7 @@ Docker Compose 1.27.4+
 Python 3.6.12+
 PyPi (pip) 21.0.1+
 
-- Demais requisitos no arquivo [requirements.txt](twitter_case/src/requirements.txt)
+- Demais requisitos no arquivo [requirements.txt](src/requirements.txt)
 
 1. Script  de coleta do Twitter e escrita no db:
 https://github.com/gpinotti/twitter_case/blob/main/src/collect_tweets.py
