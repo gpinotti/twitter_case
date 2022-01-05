@@ -84,8 +84,11 @@ Inicializar os containers através do docker-compose:
 cd twitter_case/deploy
 docker-compose -f docker-compose.yml up -d
 ```
+Desligar a aplicação via docker compose:
 
-
+```
+docker-compose -f docker-compose.yml down
+```
 
 **Informações de acessos as APIs:**
 
