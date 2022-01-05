@@ -1,3 +1,7 @@
+**Desenho da solução:**
+
+![](/images/twitter-case.jpg)
+
 **Documentação do Projeto**
 
 Este projeto coleta dados do Twitter que contenham algumas hashtags pré-definidas e armazena em banco de dados
