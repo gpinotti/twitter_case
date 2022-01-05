@@ -123,7 +123,7 @@ Senha: admin
 
 Arquivo json para ser importado no postman:
 
-XXXXXXX
+[twitter-case.postman_collection.json](postman/twitter-case.postman_collection.json)
 
 "How to" de como importar:
 
