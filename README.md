@@ -117,7 +117,7 @@ Senha: admin
 
 
 
-Arquivo json para ser importado no postman:
+**Coleção no postman para consumir as APIs**
 
 [twitter-case.postman_collection.json](postman/twitter-case.postman_collection.json)
 
