@@ -77,6 +77,14 @@ CONSUMER_SECRET=***<your-consumer-secret>***
 ACCESS_TOKEN=***<your-access-token>***
 ACCESS_TOKEN_SECRET=***<your-access-secret>***
 ```
+Para iniciar o container do filebeat será necessário executar:
+
+```
+chmod 600 twitter_case/log-stack/filebeat.docker.yml
+
+chown root:root twitter_case/log-stack/filebeat.docker.yml
+```
+
 
 Inicializar os containers através do docker-compose:
 
