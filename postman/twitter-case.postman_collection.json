@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "2f917a09-44df-4b29-830b-0a7e559dfa05",
+		"name": "twitter-case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "alltweets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/tweets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"tweets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rank-by-followers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/rank-by-followers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"rank-by-followers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tweets-per-hour",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/tweets-per-hour",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"tweets-per-hour"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reload-tweets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/reload-tweets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"reload-tweets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
