@@ -135,5 +135,7 @@ Senha: admin
 
 https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-via-github-repositories
 
+Acesso ao kibana:
 
+http://localhost:5601
 
