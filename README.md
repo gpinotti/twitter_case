@@ -3,38 +3,34 @@
 Este projeto coleta dados do Twitter que contenham algumas hashtags pré-definidas e armazena em banco de dados
 
 Segue a lista de hashtags coletadas:
-
 *#devops, #sre, #microservices, #observability, #oauth, #metrics, #logmonitoring, #opentracing*
 
 **Pré-requisitos**:
-
 ```
 *Docker 20.10.2+*
 *Docker Compose 1.27.4+*
 *Python 3.6.12+*
 *PyPi (pip) 21.0.1+*
 ```
-
-Requisitos bibliotecas Python requirements.txt
-
+Requisitos bibliotecas Python [requirements.txt](src/requirements.txt)
 ###########################################
 
-1 - Script de coleta do Twitter e popula o mongodb:
+1 - Script que busca os Tweets e popula o mongodb:
 
-collect_tweets.py
+[collect_tweets.py](src/collect_tweets.py)
 
 2 - Script que lista os 5 usuarios com maior numero de seguidoresna base:
 
-rank_users.py
+[rank_users.py](src/rank_users.py)
 
 3 - Total de postagem alocadas por hora do dia:
 
-count_tweets_by_hour.py
+[count_tweets_by_hour.py](src/count_tweets_by_hour.py)
 
 4 - O total de postagens para cada uma das hashtags por idioma:
 
 
-Para execução em um ambiente local não docker é necessário exportar as variáveis listadas abaixo.
+Para execução em um ambiente local é necessário exportar as variáveis listadas abaixo.
 
 Variáveis de autenticação com Twitter necessário exportar no sistema operacional:
 
