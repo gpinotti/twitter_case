@@ -117,7 +117,7 @@ Senha: admin
 
 **Print dashboard:**
 
-![](C:\Users\gabriel\Documents\Case-ITAU\Graphana.PNG)
+![](/images/Graphana.PNG)
 
 
 
