@@ -86,6 +86,16 @@ def tweets_per_hour():
     else:
         return 'Failed to collect data from the database', 500
 
+@app.route('/api/locate_by_tag', methods=['GET'])
+def locate_by_tag():
+
+    all_tweets = mongodb_query(MONGO_COL_LOCALE)
+
+    if not all_tweets is False:
+        return ({'locale_by_tag':all_tweets})
+    else:
+        return 'Failed to collect data from the database', 500
+
 @app.route('/api/reload-tweets', methods=['POST'])
 def reload_tweets():
     

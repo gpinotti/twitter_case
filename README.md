@@ -33,6 +33,7 @@ Requisitos bibliotecas Python [requirements.txt](src/requirements.txt)
 
 4 - O total de postagens para cada uma das hashtags por idioma:
 
+[count_tweets_locale_by_tag.py.py](src/tweets_locale_by_tag.py)
 
 Para execução em um ambiente local é necessário exportar as variáveis listadas abaixo.
 
@@ -110,6 +111,7 @@ URL local [http://localhost:8081](http://localhost:8081/)
 | /api/tweets            | `GET`       | `200`                       | `500`                       | Retorna a lista completa dos tweets carregados pelo loader e salvos no banco de dados. |
 | /api/rank-by-followers | `GET`       | `200`                       | `500`                       | Retorna o top 5 usuarios com mais seguidores salvos no BD.   |
 | /api/tweets-per-hour   | `GET`       | `200`                       | `500                        | Total de tweets por hora do dia salvos no BD                 |
+| /api/locate_by_tag     | `GET`       | `200`                       | `500                        |                  |
 | /api/reload-tweets     | `POST`      | `201`                       | `503`                       | Carrega uma nova lista de tweets e salva no BD               |
 
 **Monitoramento / LOGS**
