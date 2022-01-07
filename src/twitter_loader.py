@@ -1,6 +1,7 @@
 import collect_tweets
 import rank_users
 import count_tweets_by_hour
+import tweets_locale_by_tag
 import configs
 import logging
 import time

@@ -36,9 +36,11 @@ def locale_by_tag(db_connection, mongo_col_tweets, mongo_col_locale):
 
 
 def main():
+    logging.info("Group tweets by languange and #tags")
     mongodb_connection = configs.mongodb_connect()
     tweets_locale_by_tag = locale_by_tag(mongodb_connection, MONGO_COL_TWEETS, MONGO_COL_LOCALE)
+    logging.info("Tweets group by language and #TAGs!")
 
 if __name__ == "__main__":
-#    configs.logging_basic_config()
+    configs.logging_basic_config()
     main()
