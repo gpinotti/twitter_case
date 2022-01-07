@@ -35,6 +35,22 @@ def mongodb_query(mongo_col):
     except:
         return False
 
+def mongodb_query1(mongo_col):
+
+    try:
+        myclient = pymongo.MongoClient(MONGO_SERVER, username=MONGO_USER, password=MONGO_PWD)
+        mydb = myclient[MONGO_DB]
+        mycol = mydb[mongo_col]
+
+        result1 = mycol.find()
+        constr_result1 = list(result1)
+
+        return(constr_result1)
+    except:
+        return False
+
+
+
 def run_twitter_loader():
 
     try:
@@ -89,7 +105,7 @@ def tweets_per_hour():
 @app.route('/api/locate_by_tag', methods=['GET'])
 def locate_by_tag():
 
-    all_tweets = mongodb_query(MONGO_COL_LOCALE)
+    all_tweets = mongodb_query1(MONGO_COL_LOCALE)
 
     if not all_tweets is False:
         return ({'locale_by_tag':all_tweets})
