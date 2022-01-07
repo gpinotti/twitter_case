@@ -10,7 +10,7 @@ def main():
     collect_tweets.main()
     rank_users.main()
     count_tweets_by_hour.main()
-
+    tweets_locale_by_tag.main()
 
 if __name__ == "__main__":
     configs.logging_basic_config()
