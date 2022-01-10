@@ -66,6 +66,26 @@
 			"response": []
 		},
 		{
+			"name": "locate_by_tag",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/locate_by_tag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"locate_by_tag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "reload-tweets",
 			"request": {
 				"method": "POST",
