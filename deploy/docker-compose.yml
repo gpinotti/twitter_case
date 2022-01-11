@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.7'
 
 services:
 
@@ -28,6 +28,11 @@ services:
       ACCESS_TOKEN_SECRET: ${ACCESS_TOKEN_SECRET}
     ports:
       - 8081:8081
+    logging:
+      driver: "json-file"
+      options:
+        labels: "production_status"
+        env: "os"
     links:
       - mongo
       - filebeat
