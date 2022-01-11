@@ -114,6 +114,18 @@ URL local [http://localhost:8081](http://localhost:8081/)
 | /api/locate_by_tag     | `GET`       | `200`                       | `500`                        | total de postagens para cada uma das #tag por idioma/país do usuário que postou                 |
 | /api/reload-tweets     | `POST`      | `201`                       | `503`                       | Carrega uma nova lista de tweets e salva no BD               |
 
+
+**Configuração LOGs:
+Após conseguir acessar a URL do Kibana (pode demorar alguns minutos). Executar o script de criação do index do filebeat:
+
+```
+sh log-stack/create_index.sh
+```
+Com a criação do index habilitada será possível visualizar os logs do twitter_case no Kibana na aba *"Discovery"*:
+
+ ![](images/kibana.PNG)
+
+
 **Monitoramento / LOGS**
 
 Acesso ao grafana:
@@ -132,6 +144,16 @@ Senha: admin
 ![](/images/Graphana.PNG)
 
 
+Coleta das metrics através do Prometheus:
+
+```
+http://localhost:8081/metrics
+```
+**Coleta dos LOGS:**
+
+Acesso ao kibana:
+
+http://localhost:5601
 
 **Coleção no postman para consumir as APIs**
 
@@ -141,7 +163,5 @@ Senha: admin
 
 https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-via-github-repositories
 
-Acesso ao kibana:
 
-http://localhost:5601
 
