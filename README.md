@@ -117,6 +117,9 @@ URL local [http://localhost:8081](http://localhost:8081/)
 
 **Configuração LOGs**
 
+Acesso ao kibana:
+http://localhost:5601
+
 Após conseguir acessar a URL do Kibana (pode demorar alguns minutos). Executar o script de criação do index do filebeat:
 
 ```
