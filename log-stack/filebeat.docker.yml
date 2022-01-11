@@ -14,8 +14,12 @@ processors:
 
 output.elasticsearch:
   hosts: ["elasticsearch:9200"]
-  indices:
-    - index: "filebeat-%{[agent.version]}-%{+yyyy.MM.dd}"
+  index: "%{[fields.log_type]}-%{[agent.version]}-%{+yyyy.MM.dd}"
+#  indices:
+#  index: "filebeat-%{[agent.version]}-%{+yyyy.MM.dd}"
+
+setup.kibana:
+  host: "kibana:5601"
 
 logging.json: true
 logging.metrics.enabled: false

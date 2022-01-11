@@ -100,6 +100,28 @@ services:
     networks:
       - twnet
 
+#fluent-bit:
+#    image: fluent/fluent-bit
+#    container_name: fluent-bit
+#    volumes:
+#      - ./fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf
+#    networks:
+#      - twnet
+#    depends_on:
+#      - elasticsearch
+
+
+#  filebeat:
+#    image: "docker.elastic.co/beats/filebeat:7.16.2"
+#    container_name: filebeat
+#    user: root
+#    volumes:
+#      - ../log-stack/filebeat.docker.yml:/usr/share/filebeat/filebeat.yml:ro
+#      - /var/lib/docker:/var/lib/docker:ro
+#      - /var/run/docker.sock:/var/run/docker.sock
+#    networks:
+#      - twnet
+
 volumes:
   elasticsearch_data:
 
