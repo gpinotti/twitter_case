@@ -115,7 +115,8 @@ URL local [http://localhost:8081](http://localhost:8081/)
 | /api/reload-tweets     | `POST`      | `201`                       | `503`                       | Carrega uma nova lista de tweets e salva no BD               |
 
 
-**Configuração LOGs:
+**Configuração LOGs**
+
 Após conseguir acessar a URL do Kibana (pode demorar alguns minutos). Executar o script de criação do index do filebeat:
 
 ```
